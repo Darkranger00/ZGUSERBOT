@@ -10,7 +10,7 @@ class Development(Config):
     # create any PostgreSQL database (i recommend to use elephantsql) and paste that link here
     DB_URI = "postgres://lvxjlgee:8FLuaV-Mw9KNFvkZ3nCHEOgjwa8jnsQG@jelani.db.elephantsql.com/lvxjlgee" # IF U DONT KNOW HOW TO MAKE THEN GO IN ZG SUPPORT AND TYPE #DB_URI 
     # After cloning the repo and installing requirements do python3 stringsetup.py an fill that value with this
-    STRING_SESSION = "1AZWarzcBu4Me07tdbHzll173qNk7C8qzycI4Nr17gcXI9eZtSEIfu6Oh4gojdplF9ZYtdXpx3QsQlZvuobAo2qWOJdP7a8redAYa48wPawIpoZ9TJQNkOM-3THgJIV88G6QB-CDoYf4Mx35nCGbZZ-LiH1CQS59cuoRhQqhIf1K7Enuisjsu11K5SjXPMJxTP8LRTTtUVjndWwoxoMa7QkEFb2vmBLjNkjEEJ48mIFLPatB7_VQ17uYvsmb-gcTE-W_R5GzSJk5BiHg8WW49j_rXtPZTvOoB_LbdgtIYaAzaxaFFS_gwf1EmGEWDwu2B-UWd5duufLDc1pNnHFKxOQqnkRQwHO0="# IF U DONT KNOW HOW TO MAKE THEN GO IN ZG SUPPORT AND TYPE #session 
+    STRING_SESSION = "1BVtsOHcBuzqdATCnpczIMHPh85QcINKqijFps-Y0pyZup4pT5JQLlGpl_OzCDwnmwjSfY1-PxhPSZeOBygmRZT6RP_9P7VUiXHbX00k0etKN6FLkcknfngdPdu4IwGNnmPcozNd6ej-hptSxQfpU9JPKEGes6L7Z_PmLMyGNcUYom55wIg_c_r5f5GPLItG6CGTCLQ3vDMk7OdV7AUPaPR254zdo7_n1VmByb4IUqy26op1_z_lJ7oODqL5mz2fQelIOrqoWTSkGcjnBHyeCDj04f8Woh_puzKaDyI6JUTY_eK1qJdogsR6kIsKLo0nVKRWs7VmXBwh4fZLJ8nrInADevARegvY="# IF U DONT KNOW HOW TO MAKE THEN GO IN ZG SUPPORT AND TYPE #session 
     # --------------------------------------------------
 
     TG_BOT_TOKEN = "5112208449:AAEwmbUrTq_BUumzKDY850_qS1RZvEqriaw"# create a new bot in @botfather and fill the following vales with bot token
