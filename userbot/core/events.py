@@ -94,9 +94,9 @@ async def safe_check_text(msg):  # sourcery no-metrics
     if not msg:
         return False
     msg = str(msg)
-    from .session import ZGPRO
+    from .session import ZGBOT
 
-    phone = str((await ZGPRO.get_entity(ZGPRO.uid)).phone)
+    phone = str((await ZGBOT.get_entity(ZGBOT.uid)).phone)
     return bool(
         (
             (Config.STRING_SESSION in msg)
