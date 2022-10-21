@@ -6,11 +6,11 @@ class Development(Config):
     APP_ID = 4524654
     API_HASH = "4cfbcd31ec888cc3f0709d8d20607ac8"
     # the name to display in your alive message
-    ALIVE_NAME = "ʑɠ ცơɬ "
+    ALIVE_NAME = "ʑɠ"
     # create any PostgreSQL database (i recommend to use elephantsql) and paste that link here
     DB_URI = "postgres://lvxjlgee:8FLuaV-Mw9KNFvkZ3nCHEOgjwa8jnsQG@jelani.db.elephantsql.com/lvxjlgee" # IF U DONT KNOW HOW TO MAKE THEN GO IN ZG SUPPORT AND TYPE #DB_URI 
     # After cloning the repo and installing requirements do python3 stringsetup.py an fill that value with this
-    STRING_SESSION = "1AZWarzgBu37IZGMZ96sOVlNWquW8NdPD97hX2zKZPasUGA5anRqQFHhkSy9MuK0pY9Md4mqu0BkdU_5frve4mIHBJirb7zlpIhzeRXbbwjXcNiUTTw5gkooCftOm7syWkw_Zq0TRn80nBnDZemJl_qqrAmFDONpqvH8lEJb6NuB-IjmGg8g_cKnCsXdOuRwH5K4AL9IAugwdhMk3LQxU_-1PWNKSqt6dVqL_VIJrHXlMWYLNmyYxuR0SntIupiYL2ndReGhXgHhnsgjs5atv4CPp6018dnkIQTR16Rvd4936_aKY86WAgfjbwu_2meNiThHWWy_35qDMvO8L6B3f0nPoKQssPmA="# IF U DONT KNOW HOW TO MAKE THEN GO IN ZG SUPPORT AND TYPE #session 
+    STRING_SESSION = "1AZWarzkBu0c-VnypWD55GSzim_d1e-UowzZ0MIz8y7fgMMyEWU3GWBja_tPEQ6s8db0yyivuP6jkgq1_Lh1U2FjLTJkm8VM4e_8ebFMD8kDik9WawCguC1RuDCAnbWjh8nldZEPpN3zNAlvyTLGujqS2NETcGkeGyYpDLMXhyii6FmbS1H9H15yYKP5A6q0KPaSeoD0F-d_MREO2yfRZ9Hkd1lF42DI0Crg6gazhZxFIsBXxECtlWp1M8GzE9py69JtDqw1rSZiNGc89_iQ9vSa_xW9HHghCmGhzBJ_xzLmPM4sjQ3n2gN1VOLS5HiBJzVD2__g1zLL4so-YrJxMlphvmcg-k1c="# IF U DONT KNOW HOW TO MAKE THEN GO IN ZG SUPPORT AND TYPE #session 
     # --------------------------------------------------
 
     TG_BOT_TOKEN = "5112208449:AAEwmbUrTq_BUumzKDY850_qS1RZvEqriaw"# create a new bot in @botfather and fill the following vales with bot token
