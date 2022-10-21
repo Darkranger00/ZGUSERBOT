@@ -180,7 +180,7 @@ class ZGBOTClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        link = "[here](https://t.me/ZGPROSSS_support)"
+                        link = "[here](https://t.me/ZGBOTSSS_support)"
                         text = (
                             "**ZGBOT Error report**\n\n"
                             + "If you wanna you can report it"
@@ -194,7 +194,7 @@ class ZGBOTClient(TelegramClient):
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
 
-            from .session import ZGPRO
+            from .session import ZGBOT
 
             if not func.__doc__ is None:
                 CMD_INFO[command[0]].append((func.__doc__).strip())
@@ -207,18 +207,18 @@ class ZGBOTClient(TelegramClient):
                     except BaseException:
                         LOADED_CMDS.update({command[0]: [wrapper]})
                 if edited:
-                    ZGPRO.add_event_handler(
+                    ZGBOT.add_event_handler(
                         wrapper,
                         MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                ZGPRO.add_event_handler(
+                ZGBOT.add_event_handler(
                     wrapper,
                     NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                 )
                 if allow_sudo and gvarstatus("sudoenable") is not None:
                     if command is None or command[0] in sudo_enabledcmds:
                         if edited:
-                            ZGPRO.add_event_handler(
+                            ZGBOT.add_event_handler(
                                 wrapper,
                                 MessageEdited(
                                     pattern=REGEX_.regex2,
@@ -226,7 +226,7 @@ class ZGBOTClient(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        ZGPRO.add_event_handler(
+                        ZGBOT.add_event_handler(
                             wrapper,
                             NewMessage(
                                 pattern=REGEX_.regex2,
@@ -242,8 +242,8 @@ class ZGBOTClient(TelegramClient):
                 except BaseException:
                     LOADED_CMDS.update({file_test: [func]})
                 if edited:
-                    ZGPRO.add_event_handler(func, events.MessageEdited(**kwargs))
-                ZGPRO.add_event_handler(func, events.NewMessage(**kwargs))
+                    ZGBOT.add_event_handler(func, events.MessageEdited(**kwargs))
+                ZGBOT.add_event_handler(func, events.NewMessage(**kwargs))
             return wrapper
 
         return decorator
@@ -301,7 +301,7 @@ class ZGBOTClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        link = "[here](https://t.me/ZGPROSSS_support)"
+                        link = "[here](https://t.me/ZGBOTSSS_support)"
                         text = (
                             "**ZGBOT Error report**\n\n"
                             + "If you wanna you can report it"
@@ -315,12 +315,12 @@ class ZGBOTClient(TelegramClient):
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
 
-            from .session import ZGPRO
+            from .session import ZGBOT
 
             if edited is True:
-                ZGPRO.tgbot.add_event_handler(func, events.MessageEdited(**kwargs))
+                ZGBOT.tgbot.add_event_handler(func, events.MessageEdited(**kwargs))
             else:
-                ZGPRO.tgbot.add_event_handler(func, events.NewMessage(**kwargs))
+                ZGBOT.tgbot.add_event_handler(func, events.NewMessage(**kwargs))
 
             return wrapper
 
