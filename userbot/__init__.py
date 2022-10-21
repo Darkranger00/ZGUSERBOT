@@ -6,7 +6,7 @@ import heroku3
 
 from .Config import Config
 from .core.logger import logging
-from .core.session import ZGPRO
+from .core.session import ZGBOT
 from .helpers.functions.converter import Convert
 from .helpers.functions.musictool import *
 from .helpers.utils.utils import runasync
@@ -17,10 +17,10 @@ __license__ = "GNU Affero General Public License v3.0"
 __author__ = "ZGBOT <https://github.com/Zazbhai/ZGUSERBOT>"
 __copyright__ = f"ZGBOT Copyright (C) 2020 - 2021  {__author__}"
 
-ZGPRO.version = __version__
-ZGPRO.tgbot.version = __version__
+ZGBOT.version = __version__
+ZGBOT.tgbot.version = __version__
 LOGS = logging.getLogger("ZGBOT")
-bot = ZGPRO
+bot = ZGBOT
 
 StartTime = time.time()
 catversion = "3.2.0"
@@ -28,7 +28,7 @@ catversion = "3.2.0"
 
 def close_connection(*_):
     print("Clossing Userbot connection.")
-    runasync(ZGPRO.disconnect())
+    runasync(ZGBOT.disconnect())
     sys.exit(143)
 
 
